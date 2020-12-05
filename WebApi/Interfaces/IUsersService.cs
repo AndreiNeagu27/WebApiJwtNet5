@@ -7,7 +7,7 @@ namespace WebApi.Interfaces
 {
     public interface IUsersService
     {
-        AuthorizationResponse Authenticate(AuthorizationRequest authorizationRequest);
+        AuthorizationResponse Authorize(AuthorizationRequest authorizationRequest);
         User GetUser(Guid userId);
         IEnumerable<User> GetAllUsers();
         User InsertUser(User user);
